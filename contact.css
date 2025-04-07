@@ -714,7 +714,9 @@ border: none;
             height: 50vh; /* Ensure height is set */
             background: transparent; /* Make hero section transparent */
         }
-    
+        .content h1{
+            font-size: 30px;
+         }
         .header {
             position: absolute; /* Make header position absolute */
             width: 100%;
@@ -976,6 +978,8 @@ border: none;
          height: 50vh; /* Ensure height is set */
          background: transparent; /* Make hero section transparent */
      }
+
+     
  
      .header {
          position: absolute; /* Make header position absolute */
