@@ -8,63 +8,116 @@
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-    <div class="container">
-        <!--  start top-header -->
-          <div class="top-header">
-        <header>
-            <div class="social-icons">
-                <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                <a href="#" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i>
-                    </a>
-                <a href="#" class="social-link"
-                title="Twitter"><i class="fa-brands fa-twitter"></i>
-                    </a>
-                <a href="#" class="social-link" title="Youtube"><i class="fa-brands fa-youtube"></i>
-                    </a>
-                    <a href="#" class="social-link"  title="skype"><i class="fa-brands fa-skype"></i></a></li>
-            </div> 
-            <div class="message">
-                <!-- call -->
-                 <i class="fa-solid fa-mobile-screen-button"> 
-             </i>
-                <a href="tel:+252 612194935">Have a question?
-                    Call now +252 612194935 </a>
-                    <!-- slash -->
-                     <p class="slash">/</p>
-                    <!-- Message -->
-                    <i class="fa-solid fa-message"></i>
-                    <a href="Email:naema.a.ahmed12@gmail.com">Need Help? contact us via Email</a>
-             </div>
-             <div class="line"></div>
-            <nav class="nav-bar">
-                
-                <ul>
-                    <li><a href="#"><img src="images/logo.png" alt=""></a></li>
-                    <li><a href="index.html" class="home"><i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="Service.html">Service</a></li>
-                    <li><a href="FAQs.html">FAQs</a></li>
-                    <li><a href="portfolio.html">portfolio</a></li>
-                    <li><a href="Shop.html">Shop</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="Buy XTRA Theme.html">Buy XTRA Theme</a></li>
-                    <li><a href=""></li><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li><a href=""><p class="cart-count">0</p></a></li>
-                    <i class="fa-solid fa-bars"></i>
-                </ul>
-            </nav>
+    <header class="header">
+        <!-- Humburger -->
+        <div class="humburger">
            
+           <!-- <a href="tel:617361394"><i class="fa-solid fa-phone-volume phone" data-visible="true" ></i></a> -->
+           <i class="fa-solid fa-bars" data-visible="true"></i>
+           <i class="fa-solid fa-close" data-visible="false"></i>
+       </div>
+       <div class="top-header">
+           <!-- social -->
+           <div class="social">
+               <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i>
+                   </a>
+               <a href="#" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i>
+                   </a>
+               <a href="#" class="social-link"
+               title="Twitter"><i class="fa-brands fa-twitter"></i>
+                   </a>
+               <a href="#" class="social-link" title="Youtube"><i class="fa-brands fa-youtube"></i>
+                   </a>
+
+           </div>
+           <!-- contact -->
+            <div class="message-contact">
+               <!-- call -->
+                <i class="fa-solid fa-mobile-screen-button"> 
+            </i>
+               <a href="tel:252617361394">Have a question.?
+                   Call now +252(617361394)</a>
+                   <!-- slash -->
+                    <p class="slash">/</p>
+                   <!-- Message -->
+                   <i class="fa-solid fa-message"></i>
+                   <a href="mailto:cabdiladiifcabdisamed@gmail.com">Need Help.? contact us via Email</a>
+            </div>
+       </div>
+
+       <!-- Second Header -->
+
+       <div class="second-header">
+           <div class="logo">
+               <a href="./HTML/index.html">
+                   <img src="./images/logo.png" alt="Company Logo">
+               </a>
+           </div>
+           <!-- menu -->
+           <nav class="menu">
+               <ul>
+                   <li><a href="./HTML/index.html" ><i class="fa-solid fa-house"></i></a></li>
+                   <li><a href="index.html"  >About Us</a></li>
+                   <li><a href="./HTML/services.html">Services</a></li>
+                   <li><a href="FAQs.html">FAQS</a></li>
+                   <li><a href="./HTML/blog.html" >Blog</a></li>
+                   <li><a href="portfolio.html"  class="current-menu">Portfolio</a></li>
+                   <li><a href="./HTML/shop.html" >Shop</a></li>
+                   <li><a href="./contact.html" >Contact</a></li>
+               </ul>
+               <!-- icons -->
+               <i class="fa-solid fa-magnifying-glass"></i>
+               <i class="fa-solid fa-cart-shopping"></i>
+               <p class="cart-count">0</p>
+               <i class="fa-solid fa-bars"></i>
+           </nav>
+       </div>
+       <!-- Mobile Menu -->
+       <nav class="container mobile-menu" data-visible="false">
+           
+           <ul>
+            <li><a href="./HTML/index.html" ><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="index.html"  >About Us</a></li>
+            <li><a href="./HTML/services.html">Services</a></li>
+            <li><a href="FAQs.html">FAQS</a></li>
+            <li><a href="./HTML/blog.html" >Blog</a></li>
+            <li><a href="portfolio.html"  class="current-menu">Portfolio</a></li>
+            <li><a href="./HTML/shop.html" >Shop</a></li>
+            <li><a href="./contact.html" >Contact</a></li>
+           </ul>
+            
+        </nav>
+
         </header>
-        </div>
+
+       <!-- hero   -->
+
+       <section class="hero">
+           <!--  -->
+           <div class="overlay"></div>
+           <div class="slider">
+               <div class="slide active" style="background-image: url('https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/06/global-header.jpg');">
+                   <div class="content content-2">
+                          <h1>Portfolio </h1>
+                          
+                          <ul>
+                            <li><a href="./HTML/index.html" ><i class="fa-solid fa-house"></i></a></li>
+                            <li><i class="fa-solid fa-arrow-right"></i></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                          </ul>
+                   </div>
+               </div>
+               </div>
+               
+               
+      
+       </section>
+
         <!-- end top-header -->
          <!-- start second-top-header -->
         <div class="second-top-header">
-            <h1 class="  section-1-title">Portfolio</h1>
-    
-            <div class="social-icons home"><a href="index.html" class="home" ><i class="fa-solid fa-house"></i></a> 
-            <i class=" fa-solid fa-arrow-right"></i><h5>Portfolio</h4></div>
+           
+           
         </div>
     
        
@@ -75,148 +128,131 @@
                 <div class="image-container">
                     <a href="page1.html">
                         <img src="images/f1.jpg" alt="Image 1">
-                       
                         <div class="hover-bg"></div>
                         <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
                         <div class="hover-text">modern multifunction printer</div>
-                        
                     </a>
                 </div>
-                
                 <div class="image-container">
                     <a href="page2.html">
                         <img src="images/f2.jpg" alt="Image 2">
-                        
                         <div class="hover-bg"></div>
                         <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
                         <div class="hover-text">wireless hair dryer</div>
                     </a>
                 </div>
-        
                 <div class="image-container">
                     <a href="page3.html">
                         <img src="images/f5.jpg" alt="Image 3">
-                        
                         <div class="hover-bg"></div>
                         <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
                         <div class="hover-text">portable wireless speaker</div>
-                        
                     </a>
                 </div>
-        
                 <div class="image-container">
                     <a href="page4.html">
                         <img src="images/f6.jpg" alt="Image 4">
-                        
                         <div class="hover-bg"></div>
                         <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
                         <div class="hover-text">stand mobile charger</div>
-                        
                     </a>
                 </div>
-        
                 <div class="image-container">
                     <a href="page5.html">
                         <img src="images/f7.jpg" alt="Image 5">
-                       
                         <div class="hover-bg"></div>
                         <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
                         <div class="hover-text">special silver speaker</div>
-                        
                     </a>
                 </div>
-        
                 <div class="image-container">
                     <a href="page6.html">
                         <img src="images/f8.jpg" alt="Image 6">
-                       
                         <div class="hover-bg"></div>
                         <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
                         <div class="hover-text">long standing speaker</div>
-                      
                     </a>
                 </div>
             </div>
-           
-             <div class="section-6">
-                <h1>subcribe to our newsletter</h1>
-            <div class="footer-section">
-               
-                <div class="input-button">
-                    <div class="input">
-                    <input class="input"    type="email" name="MERGE0" placeholder="Enter your email address please ..." required="required"></div>
-               
-                <button name="subscribe" type="submit">JOIN NOW</button></div>
-                <div class="grid-section">
-                    <div class="grid-section1">
-                <div class=" logo-paragraph">
-                <a href="#"><img src="images/logo.png" alt=""></a>
-                <p>XTRA WordPress theme is the last theme you will ever have to buy for your business. More powerful and easy to use than any other themes on the market with incredible features and friendly support.</p>
-                </div><button class="bottom">Purchase XtraTheme</button></div>
-                
-            
-            <div class="grid-section1 grid-section-2">
-                <div class="menu-container">
-                    <div class="column">
-                        <h3>USEFUL-LINKS</h3>
-                        <ul>
-                            <li>○ <a href="#">Purchase now</a></li>
-                            <li>○ <a href="#">Support</a></li>
-                            <li>○ <a href="#">Documentation</a></li>
-                            <li>○ <a href="#">Custom Services</a></li>
-                            <li>○ <a href="#">Marketplaces</a></li>
-                            <li>○ <a href="#">Codevz Website</a></li>
-                            <li>○ <a href="#">Portfolio Reviews</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h3>SHORTCUTS</h3>
-                        <ul>
-                            <li>○ <a href="#">About Us</a></li>
-                            <li>○ <a href="#">Services</a></li>
-                            <li>○ <a href="#">News & Updates</a></li>
-                            <li>○ <a href="#">Our Projects</a></li>
-                            <li>○ <a href="#">Contact Us</a></li>
-                            <li>○ <a href="#">Creative Career Tips</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h3>CONTACT-US</h3>
-                        <ul>
-                            <li>○ <a href="#">General enquiries</a></li>
-                            <li>○ <a href="#">Schedule a call</a></li>
-                            <li>○ <a href="#">General FAQ's</a></li>
-                            <li>○ <a href="#">Get in Touch</a></li>
-                            <li>○ <a href="#">Xtra Popular Events</a></li>
-                            <li>○ <a href="#">Xtra Reviews</a></li>
-                        </ul>
-                    </div>
+            <!-- Footer -->
+
+         <footer class="footer">
+            <div class="top-footer">
+                <span>SUBSCRIBE TO OUR <b>NEWSLETTER</b></span>
+                <div class="subscribe-form">
+                    <input type="email" class="input-field" placeholder="Enter your email">
+                    <button class="btn">Subscribe</button>
                 </div>
-                
-            
             </div>
+    
+            <div class="middle-footer">
+                <div class="logo">
+                    <img src="https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/logo-heks-light.png" alt="Company Logo">
+                    <p>
+                        XTRA WordPress theme is the last theme you will ever have to buy for your business. More powerful and easy to use than any other themes on the market with incredible features and friendly support.
+                    </p>
+                    <button class="btn-secondary">Contact Us</button>
+                </div>
+    
+                <div class="useful-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Purchase Now</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Customer Services</a></li>
+                        <li><a href="#">Market Places</a></li>
+                        <li><a href="#">Codevz Website</a></li>
+                        <li><a href="#">Portfolio Reviews</a></li>
+                    </ul>
+                </div>
+    
+                <div class="short-cuts">
+                    <h4>Short Cuts</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">News & Updates</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Our Projects</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Creative Career Tips</a></li>
+                    </ul>
+                </div>
+    
+                <div class="contact-us">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">General Enquiries</a></li>
+                        <li><a href="#">Schedule a Callback</a></li>
+                        <li><a href="#">General FAQs</a></li>
+                        <li><a href="#">Get in Touch</a></li>
+                        <li><a href="#">Xtra Popular Events</a></li>
+                        <li><a href="#">Xtra Reviews</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="last">
-                <footer>
-                <p>© Copyright 2025. All Rights Reserved - XtraTheme Pty Ltd</p>
-                   </footer>
-                    <header>
-                        <div class="social-icons">
-                            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                            <a href="#" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            <a href="#" class="social-link"
-                            title="Twitter"><i class="fa-brands fa-twitter"></i>
-                                </a>
-                            <a href="#" class="social-link" title="Youtube"><i class="fa-brands fa-youtube"></i>
-                                </a>
-                                <a href="#" class="social-link"  title="skype"><i class="fa-brands fa-skype"></i></a></li>
-            
-                                <a href="#">advertisement</a>
-                                <i class="fa-solid fa-message"></i> </div>
-                        </div>  </div> 
-                    </div>
-                
+    
+            <div class="bottom-footer">
+                <p>Copyright © 2020 XTRA WordPress theme. All rights reserved.</p>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
+                </ul>
+                <div class="footer-links">
+                    <a href="#">Advertisement</a>
+                    <span>/</span>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    
+    
+        <!-- JS --> 
+
+        <script src="main.js"></script>
 </body>
 </html>
