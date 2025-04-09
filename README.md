@@ -1,7 +1,7 @@
 # 💼 Business Agency Website
 
-[![Responsive](https://img.shields.io/badge/Responsive-Yes-success)](https://business-agency-website-theta.vercel.app/)
-[![GitHub Stars](https://img.shields.io/github/stars/dugsiiyeinc/Business-Agency-website?style=social)](https://github.com/dugsiiyeinc/Business-Agency-website)
+[![Responsive](https://img.shields.io/badge/Responsive-Yes-success)](https://business-agency-website-theta.vercel.app/HTML/index.html)
+[![GitHub Stars](https://img.shields.io/github/stars/dugsiiyeinc/Business-Agency-website?style=social)](https://github.com/Abdiladiif-Abdisamed/Business-Agency-Website.git)
 [![Live on Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-blue)](https://business-agency-website-theta.vercel.app/HTML/index.html)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](#-license)
 
