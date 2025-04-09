@@ -104,7 +104,4 @@ Feel free to use, modify, and distribute with proper attribution.
 > 💡 *Designed and Developed by Abdiladiif Abdisamed for Business Purposes*  
 > If you like this project, feel free to ⭐ the repo and share with others!
 
----
 
-#Full Site Home Page
-![Full Home page](image-1.png)
