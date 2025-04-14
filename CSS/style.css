@@ -1680,6 +1680,8 @@ body {
     margin-top: 0;
     width: 100%;
     margin-top: 50px !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
     grid-template-columns: repeat(1, 1fr); /* One column on mobile */
   }
   .service {
@@ -1749,6 +1751,8 @@ body {
     margin-left: 0;
     width: 100vw;
     padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .story {
@@ -1823,6 +1827,8 @@ body {
     margin-top: 100px;
     width: 100vw;
     height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .goals {
@@ -1892,6 +1898,8 @@ body {
     padding: 20px;
     height: auto;
     margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .works {
@@ -2004,6 +2012,8 @@ body {
   .Blogs {
     padding: 20px;
     height: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .blogs-title {
@@ -2047,6 +2057,8 @@ body {
     flex-direction: column;
     padding: 20px;
     height: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .our-team-title {
@@ -2098,6 +2110,8 @@ body {
     flex-direction: column;
     padding: 20px;
     gap: 20px;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .our-partener img {
@@ -2109,6 +2123,8 @@ body {
   /* Footer */
   .footer {
     padding: 20px;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .top-footer {
