@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monomakh&family=Noto+Serif+Oriya:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shafarik&family=Sono:wght@200..800&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: "Lato", sans-serif;
-
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html, body {
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling globally */
+        margin: 0;
+        padding: 0;
+    }
+    
 /* mobile Menu */
 
 .humburger{
@@ -1145,256 +1148,325 @@ color: #002699;
 
 
 /* Hero section */
-
+/* Hero section */
 .hero {
-    margin-top: 0; 
+    margin-top: 0;
     position: relative;
     width: 100%;
-    height: 50vh; 
-    background: transparent; 
+    height: 50vh;
+    background: transparent;
+    overflow-x: hidden;
 }
 
-.header {
-    position: absolute; 
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-}
-
-.second-header .logo a img,
-.second-header .menu a {
-    color: #fff; 
-    margin-left: -60px;
-     margin-top: -20px;
-}
-
-.content{
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
     justify-content: center;
 }
-.content h3{
+
+.content h3 {
     font-size: 36px;
     font-weight: 900;
-    padding: 0 30px;
+    padding: 0 20px; /* Reduced padding */
     margin-top: 50px;
 }
-.content p{
-    font-size: 20px;
-    padding:0 30px;
 
+.content p {
+    font-size: 18px; /* Slightly smaller for mobile */
+    padding: 0 20px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 0;
 }
 
-   /* Services */
-   .pricing-cards {
-       flex-direction: column;
-       gap: 20px;
-       padding: 20px;
-   }
-
-   .pricing-header {
-       font-size: 30px;
-       text-align: center;
-   }
-
-   .card {
-       width: 100%;
-       padding: 10px;
-   }
-
-   .card h3 {
-       font-size: 18px;
-   }
-
-   .card .price {
-       font-size: 24px;
-   }
-
-   .card p {
-       font-size: 14px;
-   }
-
-   .card button {
-       padding: 10px;
-       font-size: 14px;
-   }
-
-   /* Custom Service */
-   .custom-service {
-       flex-direction: column;
-       height: auto;
-       padding: 20px;
-   }
-
-   .custom-service-contents {
-       flex-direction: column;
-       gap: 20px;
-   }
-
-   .custom-service-content h2 {
-       font-size: 24px;
-   }
-
-   .custom-service-content p {
-       font-size: 16px;
-       text-align: center;
-   }
-
-   .btn-primary {
-       padding: 10px 40px;
-       font-size: 14px;
-   }
-
-    /* Our Works */
-    .our-works {
-        flex-direction: column;
-        padding: 20px;
-        height: auto;
-        margin: 0;
-    }
-
-    .works {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .works-content {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .works-content h1 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .works-content .work-content h2 {
-        font-size: 32px;
-        margin-bottom: 20px;
-    }
-
-    .works-content .work-content p {
-        font-size: 16px;
-        line-height: 25px;
-    }
-
-    .works-list {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 20px;
-    }
-
-    .works-item {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .works-item i {
-        font-size: 18px;
-    }
-
-    .works-item p {
-        font-size: 18px;
-    }
-
-    .work-types {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-top: 20px;
-    }
-
-    .work-type {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .work-type h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .work-type p {
-        font-size: 16px;
-        line-height: 25px;
-    }
-
-    /* Our Partners */
-    .our-partners {
-        padding: 20px;
-        height: auto;
-    }
-
-    .our-partener {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .our-partener img {
-        width: 100%;
-        height: auto;
-        max-width: 200px;
-    }
-
-    .our-partners span {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .our-partners h3 {
-        font-size: 38px;
-        text-align: center;
-    }
-
-    /* Our Services */
-    .services {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .service {
-        width: 100%;
-        padding: 10px;
-    }
-
-   
-
-    .service h3 {
-        font-size: 18px;
-    }
-
-    .service-content {
-        padding: 10px;
-    }
-
-    .service-content h4 {
-        font-size: 16px;
-    }
-
-    .service-content i {
-        font-size: 18px;
-    }
-
-
-    
-   /* Footer */
-   .footer {
+/* Services (Pricing Section) */
+.pricing-section {
+    margin-top: 50px;
     padding: 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.pricing-cards {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+}
+
+.pricing-header {
+    font-size: 28px; /* Adjusted for mobile */
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    padding: 15px;
+    height: auto; /* Allow height to adjust */
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.card .price {
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.card .per-month {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.card button {
+    padding: 10px;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+/* Custom Service */
+.custom-service {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.custom-service-contents {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.custom-service-contents i {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.custom-service-content h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.custom-service-content p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn-primary {
+    padding: 10px 30px;
+    font-size: 13px;
+}
+
+/* Our Works */
+.our-works {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    margin-top: 50px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.works {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.works-content {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.works-content h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.works-content .work-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.works-content .work-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.works-list {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.works-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.works-item i {
+    font-size: 24px;
+    padding: 10px; /* Reduced for mobile */
+}
+
+.works-item p {
+    font-size: 16px;
+}
+
+.work-types {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.work-type {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.work-type h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.work-type p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.work-type .num {
+    font-size: 24px;
+}
+
+.work-type-2,
+.work-type-4 {
+    margin-top: 0; /* Remove offsets for mobile */
+}
+
+/* Our Partners */
+.our-partners {
+    padding: 20px;
+    height: auto;
+    margin-top: 50px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.our-partener {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.our-partener img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+}
+
+.our-partners span {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.our-partners h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.span {
+    font-size: 28px !important;
+}
+
+/* Our Services */
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.service {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+}
+
+.service img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.service .top-arrow {
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.service h1 {
+    font-size: 32px;
+    line-height: 2rem;
+}
+
+.service h3 {
+    font-size: 16px;
+}
+
+.service p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.service-content {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.service-content h4 {
+    font-size: 14px;
+    text-align: center;
+}
+
+.service-content i {
+    font-size: 20px;
+}
+
+.service6 {
+    padding: 15px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .top-footer {
@@ -1412,15 +1484,18 @@ color: #002699;
 .subscribe-form {
     flex-direction: column;
     gap: 10px;
+    width: 100%;
 }
 
 .subscribe-form input {
     width: 100%;
+    padding: 8px;
 }
 
 .subscribe-form button {
     width: 100%;
     margin-left: 0;
+    padding: 8px;
 }
 
 .middle-footer {
@@ -1428,6 +1503,7 @@ color: #002699;
     gap: 20px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 .middle-footer .logo,
@@ -1436,11 +1512,17 @@ color: #002699;
 .middle-footer .contact-us {
     align-items: center;
     text-align: center;
+    width: 100%;
+}
+
+.middle-footer .logo img {
+    width: 120px;
 }
 
 .bottom-footer {
     flex-direction: column;
     gap: 10px;
+    width: 100%;
 }
 
 .bottom-footer p {
@@ -1449,15 +1531,13 @@ color: #002699;
 
 .bottom-footer .social-media {
     justify-content: center;
-    text-align: center;
-    margin-left: 120px;
-
+    margin-left: 0; /* Remove overflow-causing margin */
 }
 
 .footer-links {
-    margin-left: 80px;
-
-
+    margin-left: 0; /* Remove overflow-causing margin */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 }
 
