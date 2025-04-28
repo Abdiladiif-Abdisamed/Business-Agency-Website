@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
   
   
-  *{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body {
 
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling globally */
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: "Roboto", sans-serif;
-    
+}
+
+/* Ensure all containers respect viewport */
+.header, .hero, .section-1, .three-sections, .trusted, .Business-solution, 
+.our-team, .our-partener, .footer {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -179,6 +193,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     
 
 }
