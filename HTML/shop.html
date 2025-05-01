@@ -6,7 +6,6 @@
     <title>Shop page</title>
     <link rel="stylesheet" href="../CSS/shop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style">
 </head>
 <body>
     <header class="header">
@@ -58,18 +57,31 @@
            <nav class="menu">
                <ul>
                    <li><a href="index.html" ><i class="fa-solid fa-house"></i></a></li>
-                   <li><a href="../index.html">About Us</a></li>
+                   <li><a href="about.html">About Us</a></li>
                    <li><a href="services.html">Services</a></li>
-                   <li><a href="../FAQs.html">FAQS</a></li>
+                   <li><a href="portfolio.html">FAQS</a></li>
                    <li><a href="Blog.html">Blog</a></li>
-                   <li><a href="../portfolio.html">Portfolio</a></li>
+                   <li><a href="portfolio.html">Portfolio</a></li>
                    <li><a href="Shop.html" class="current-menu">Shop</a></li>
-                   <li><a href="../contact.html">Contact</a></li>
+                   <li><a href="contact.html">Contact</a></li>
                </ul>
                <!-- icons -->
-               <i class="fa-solid fa-magnifying-glass"></i>
-               <i class="fa-solid fa-cart-shopping"></i>
-               <p class="cart-count">0</p>
+               <div class="cart-container">
+                   <i class="fa-solid fa-cart-shopping"></i>
+   
+                <span class="cart-count">0</span>
+            
+          </div>
+            <div class="cart-items ">
+              
+             
+              <div  class="check-out">
+                <h4 class="total-Amount">Total : $</h4>
+                <h4 class="total-Cost">500</h4>
+                <button class="btn-checkout"> <a href="http://127.0.0.1:5500/checkout.html">Check out</a> </button>
+              </div>
+            </div>
+        
                <i class="fa-solid fa-bars"></i>
            </nav>
        </div>
@@ -77,14 +89,14 @@
        <nav class="container mobile-menu" data-visible="false">
            
            <ul>
-            <li><a href="index.html" ><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="../index.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="../FAQs.html">FAQS</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="../portfolio.html">Portfolio</a></li>
-            <li><a href="Shop.html" class="current-menu">Shop</a></li>
-            <li><a href="../contact.html">Contact</a></li>
+               <li><a href="index.html" ><i class="fa-solid fa-house"></i></a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="portfolio.html">FAQS</a></li>
+               <li><a href="Blog.html">Blog</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li><a href="Shop.html" class="current-menu">Shop</a></li>
+               <li><a href="contact.html">Contact</a></li>
            </ul>
             
         </nav>
@@ -114,46 +126,10 @@
        </section>
 
 
-       <!-- products -->
+      
+    <div class="product-container products">
 
-
-       <div class="products">
-        <div class="product">
-            <span class="price">$99</span>
-            <img src="https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/s9-600x600.jpg" alt="All In One Package">
-            <h3>All In One Package</h3>
-        </div>
-
-        <div class="product">
-            <span class="price">$29</span>
-            <img src="https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/1-600x600.jpg" alt="Business Financial Package">
-            <h3>Business Financial Package</h3>
-        </div>
-
-        <div class="product">
-            <span class="price">$79</span>
-            <img src="https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/s8-600x600.jpg" alt="Designed Corporate Mug">
-            <h3>Designed Corporate Mug</h3>
-        </div>
-        <div class="product">
-            <span class="price">$99</span>
-            <img src="https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/s9-600x600.jpg" alt="All In One Package">
-            <h3>All In One Package</h3>
-        </div>
-
-        <div class="product">
-            <span class="price">$29</span>
-            <img src="https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/1-600x600.jpg" alt="Business Financial Package">
-            <h3>Business Financial Package</h3>
-        </div>
-
-        <div class="product">
-            <span class="price">$79</span>
-            <img src="https://xtratheme.com/elementor/corporate/wp-content/uploads/sites/4/2018/07/s8-600x600.jpg" alt="Designed Corporate Mug">
-            <h3>Designed Corporate Mug</h3>
-        </div>
     </div>
-
       <!-- Footer -->
 
       <footer class="footer">
@@ -233,7 +209,7 @@
        <!-- js -->
 
        <script src="../main.js"></script>
-   </header>
+       <script src="../script.js"></script>
 
 </body>
 </html>
