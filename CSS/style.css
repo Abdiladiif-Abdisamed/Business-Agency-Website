@@ -2824,3 +2824,252 @@ img{
     justify-content: center;
   }
 }
+
+/* Cookie Container */
+.cookie {
+  position: absolute;
+  right: 10%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;  
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+}
+.coockie-container {
+  display: none;  
+  position: fixed;
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%); 
+  
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);  
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  text-align: center;
+  position: relative;
+  z-index: 9999;  
+  opacity: 0;  
+  animation: popUp 1s ease-out forwards, shadowEffect 1s ease-out forwards;
+}
+
+/* Animation for the pop-up */
+@keyframes popUp {
+  0% {
+      transform: translate(-50%, -60%);  /* Start from below */
+      opacity: 0;  /* Initially invisible */
+  }
+  50% {
+      transform: translate(-50%, -50%);  /* Center the container */
+      opacity: 1;  /* Make it visible */
+  }
+  100% {
+      transform: translate(-50%, -50%);  /* Final position */
+      opacity: 1;
+  }
+}
+
+/* Shadow effect animation */
+@keyframes shadowEffect {
+  0% {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0);  /* No shadow initially */
+  }
+  100% {
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);  /* Soft shadow after animation */
+  }
+}
+
+
+
+.contactCookie{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+.ASTeamCookie{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+.ASind{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+.abdiInfo{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+.naimaInfo{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+.naimaInfo{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.naimaInfo img{
+  margin-left: 220px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.abdiInfo img{
+  margin-left: 220px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coockie-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icons i {
+  font-size: 1.5rem;
+  color: #002699;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icons i:hover {
+  color: #0047ab;
+}
+
+.cooockie h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.personal-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.personal-info div {
+  text-align: center;
+}
+
+.personal-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #002699;
+}
+
+.personal-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.btn {
+  background: linear-gradient(45deg, #0047ab, #007bff);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button.btn:hover {
+  background: linear-gradient(45deg, #007bff, #0047ab);
+  transform: scale(1.05);
+}
+
+.contactUs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contactUs button {
+  background: #002699;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: block;
+  width: 100%;
+}
+
+.contactUs button:hover {
+  background: #0047ab;
+  transform: scale(1.05);
+}
+
+.contactUsAsteam button {
+  background: #002699;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contactUsAsteam button:hover {
+  background: #0047ab;
+  transform: scale(1.05);
+}
+
+.contactUsAsteam a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .personal-info {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .personal-info img {
+      width: 80px;
+      height: 80px;
+  }
+
+  .contactUs {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
