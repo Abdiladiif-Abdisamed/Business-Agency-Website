@@ -6,25 +6,15 @@
 }
 body {
         font-family: "Lato", sans-serif;
-    overflow-x: hidden;
 }
 
 
-.product-container, .product, .hero, .footer {
-    max-width: 100%;  
-    overflow-x: hidden;  
-}
 
 
-.header, .mobile-menu, .second-header {
-    width: 100%; 
-    box-sizing: border-box; 
-}
 
-.hero {
-    width: 100%;
-    overflow-x: hidden;
-}
+
+
+
 
 /* Ensure the footer is well-contained */
 .footer {
