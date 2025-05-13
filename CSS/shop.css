@@ -4,11 +4,36 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body{
-    font-family: "Lato", sans-serif;
-
+body {
+        font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
+
+
+.product-container, .product, .hero, .footer {
+    max-width: 100%;  
+    overflow-x: hidden;  
+}
+
+
+.header, .mobile-menu, .second-header {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.hero {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ensure the footer is well-contained */
+.footer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Prevents any elements inside it from causing overflow */
+}
+
+
 /* mobile Menu */
 
 .humburger{
