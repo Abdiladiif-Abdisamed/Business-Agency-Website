@@ -1,66 +1,71 @@
 # 💼 Business Agency Website
 
-[![Responsive](https://img.shields.io/badge/Responsive-Yes-success)](https://business-agency-website-theta.vercel.app/HTML/index.html)
-[![GitHub Stars](https://img.shields.io/github/stars/dugsiiyeinc/Business-Agency-website?style=social)](https://github.com/Abdiladiif-Abdisamed/Business-Agency-Website.git)
-[![Live on Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-blue)](https://business-agency-website-theta.vercel.app/HTML/index.html)
+[![Responsive](https://img.shields.io/badge/Responsive-Yes-success)](https://business-agency-website-theta.vercel.app/HTML/index.html)  
+[![GitHub Stars](https://img.shields.io/github/stars/dugsiiyeinc/Business-Agency-website?style=social)](https://github.com/Abdiladiif-Abdisamed/Business-Agency-Website.git)  
+[![Live on Vercel](https://img.shields.io/badge/Live%20Demo-Vercel-blue)](https://business-agency-website-theta.vercel.app/HTML/index.html)  
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](#-license)
 
 ---
 
 ## 📌 Project Description
 
-A modern and responsive *Business Agency Website* built using HTML, CSS, JavaScript, and Font Awesome. It represents a professional online presence for any company looking to market services, connect with clients, and boost credibility.
+A modern and responsive **Business Agency Website** built using HTML, CSS, JavaScript, and Font Awesome.  
+It provides a professional platform for businesses to showcase their services, interact with clients, and boost online credibility.
 
 ---
 
 ## 🎯 Purpose
 
-This website aims to:
-
-- Showcase services clearly and professionally  
-- Build trust and attract clients  
-- Represent business identity visually  
-- Support all devices (responsive)
+- Professionally display company services  
+- Build trust and attract new clients  
+- Visually represent the brand identity  
+- Offer full responsiveness across devices
 
 ---
 
 ## 🚀 Key Features
 
-- ✅ Responsive on all devices
-- ✅ Professional layout and design
-- ✅ Hero video section
-- ✅ Service listing with icons
-- ✅ Animated counters
-- ✅ Clean UI/UX
-- ✅ Font Awesome icons used
+- ✅ Fully Responsive Design – works on mobile, tablet, and desktop  
+- ✅ Hero Section with Background Video  
+- ✅ Animated Business Counters  
+- ✅ Services Section with Font Awesome Icons  
+- ✅ Add to Cart functionality for product-based features  
+- ✅ Cart Data stored with **Cookies** and **`localStorage`**  
+- ✅ External API Integration (e.g., product listings or testimonials)  
+- ✅ Smooth and intuitive UI/UX  
+- ✅ Font Awesome 6.6.0 Integration
 
 ---
 
 ## 🧰 Tech Stack
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- Font Awesome 6.6.0
+- **HTML5**  
+- **CSS3**  
+- **Vanilla JavaScript**  
+- **Font Awesome 6.6.0**  
+- **Cookies** – for user-side data storage  
+- **`localStorage`** – for persisting cart/API data  
+- **External APIs** – for dynamic content integration
+- **Vercal** Deployment
 
 ---
 
 ## 📸 Screenshots
-![Home page](image.png)
-### 🖼️ Overview
 
-![Business Stats + Services](https://chat.openai.com/mnt/data/image.png)
+### 🏠 Home Page  
+![Home Page](image.png)
 
-> The website includes dynamic stats and a modern service presentation layout.
+
 
 ---
 
 ## 🔧 Installation & Usage
 
-1. *Clone this repository*
-   bash
+1. **Clone the repository**
+   ```bash
    git clone https://github.com/dugsiiyeinc/Business-Agency-website.git
-   
+
+
 
 2. *Navigate to the folder*
    bash
