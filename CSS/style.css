@@ -1510,6 +1510,94 @@ img{
   color: #ffffff;
   margin: 0 5px;
 }
+/* Chatbot Icon */
+.chatbot-icon {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Chatbot Popup */
+.chatbot-popup {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    background-color: white;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+/* Chatbot Header */
+.chatbot-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Chat History */
+.chat-history {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.chat-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Clear History Button */
+.clear-history-btn {
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.clear-history-btn:hover {
+    background-color: #ff0000;
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 /* Telephone Responsive*/
 
 @media screen and (max-width: 480px) {

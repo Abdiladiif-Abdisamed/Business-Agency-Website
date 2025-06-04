@@ -132,3 +132,102 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   });
   
+// chatbot
+// Initialize local storage history
+let chatHistory = JSON.parse(localStorage.getItem('chatHistory')) || [];
+
+// Display chat history from local storage
+function displayHistory() {
+    const chatHistoryDiv = document.getElementById('chat-history');
+    chatHistoryDiv.innerHTML = "";
+    chatHistory.forEach(chat => {
+        const chatMessage = document.createElement('div');
+        chatMessage.classList.add('chat-message');
+        chatMessage.innerHTML = `<strong>${chat.sender}</strong>: ${chat.message}`;
+        chatHistoryDiv.appendChild(chatMessage);
+    });
+}
+
+// Open and close the chatbot
+document.getElementById('chatbot-icon').addEventListener('click', () => {
+    document.getElementById('chatbot-popup').style.display = 'flex';
+    displayHistory();
+});
+
+document.getElementById('close-chat').addEventListener('click', () => {
+    document.getElementById('chatbot-popup').style.display = 'none';
+});
+
+// Handle sending messages
+document.getElementById('send-message').addEventListener('click', async () => {
+    const userMessage = document.getElementById('user-input').value;
+    if (userMessage.trim() !== "") {
+        // Display user message
+        chatHistory.push({ sender: 'You', message: userMessage });
+        localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+
+        // Clear the input field
+        document.getElementById('user-input').value = "";
+
+        // Display history
+        displayHistory();
+
+        // Call the Google Gemini API for response (replace with actual API call)
+        const chatbotResponse = await getChatbotResponse(userMessage);
+
+        // Display chatbot response
+        chatHistory.push({ sender: 'Chatbot', message: chatbotResponse });
+        localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+        displayHistory();
+    }
+});
+
+// Handle Clear History button
+document.getElementById('clear-history').addEventListener('click', () => {
+    localStorage.removeItem('chatHistory');
+    chatHistory = [];  // Clear the chat history array
+    displayHistory();
+});
+
+// Handle greetings
+const greetings = ['hello', 'hi', 'hey', 'greetings'];
+
+// Function to fetch response from Google Gemini API
+async function getChatbotResponse(userMessage) {
+    if (greetings.some(greeting => userMessage.toLowerCase().includes(greeting))) {
+        return "Hi, I'm AbdiladiifDEV, your AI chatbot. I can assist you with business consulting!";
+    }
+
+    // Call Google Gemini API for non-greeting queries
+    return await fetchGoogleGeminiAPI(userMessage);
+}
+
+// Function to fetch response from Google Gemini API
+async function fetchGoogleGeminiAPI(userMessage) {
+    try {
+        // Make a POST request to the Gemini API with the user message
+        const response = await fetch('AIzaSyDppY9LZVQW7UtACpE4qNO9-51YN1AmrZ0', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer YOUR_API_KEY' // Replace with your actual API key
+            },
+            body: JSON.stringify({
+                message: userMessage, // Send user query as a message
+            })
+        });
+
+        // Check if the response is OK (status 200-299)
+        if (!response.ok) {
+            throw new Error(`API Error: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+
+        // Return the response from the API
+        return data.reply || 'Sorry, I didn\'t quite understand that. Can you rephrase?';
+    } catch (error) {
+        console.error('API Request Failed:', error);
+        return 'Sorry, something went wrong. Please try again later.';
+    }
+}
